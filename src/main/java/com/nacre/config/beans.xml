@@ -1,0 +1,25 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="hos" class="com.nacre.beans.BloodBank">
+	
+	<property name="hospitalName" value="NObel Hospital"></property>
+	<property name="location" value="Pune"></property>
+	<property name="bloodDetails">
+	
+	<bean class="com.nacre.beans.Blood">
+	
+	<property name="plasma" value="1235.23f"></property>
+	<property name="platelets" value="1513.23f"></property>
+	<property name="rbc" value="1848.25f"></property>
+	
+	</bean>
+	
+	</property>
+	
+	
+	</bean>
+
+</beans>
